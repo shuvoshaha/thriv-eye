@@ -1,0 +1,74 @@
+@import 'styles/style.scss';
+
+
+.te__footer {
+    background: #f3f3f3;
+    padding-top: 2rem;
+
+    .te__footer--inner {
+        @include flexo(flex, flex-start, space-between);
+        flex-wrap: wrap;
+
+        .te__footer--main {
+
+            width: 30%;
+
+            .te__footer--logo {
+                margin-bottom: 10px
+            }
+
+            .te__address {
+                @include text($lg, $sub-title-color, 500);
+            }
+
+
+        }
+
+        .te__footer--secondary {
+
+            @include flexo(flex, flex-start, space-between);
+            flex-wrap: wrap;
+            width: 70%;
+
+            .te__footer--col {
+
+                .te__footer-col--title {
+                    margin-bottom: 10px;
+                    @include text($lg, $sub-title-color, 500);
+
+                }
+
+                .te__footer-menus--list {
+                    list-style: none;
+
+                    .te__footer--menu {
+                        padding-bottom: 5px;
+                        @include text($lg, $sub-title-color, 500);
+
+
+                        .footer__menu--item {
+                            text-decoration: none;
+                            color: $sub-title-color;
+                            transition: $trasition;
+
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+
+                .app--download {
+                    @include flex;
+                    justify-content: center;
+
+                    .app--icon {
+                        width: 150px;
+                        max-height: 200px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

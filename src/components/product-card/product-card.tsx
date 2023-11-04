@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Image from '../../assets/images/product.webp'
 import { FaStar } from 'react-icons/fa'
-import './single-product.scss'
+import './product-card.scss'
 
 const SingleProduct = () => {
+    const navigate = useNavigate()
+
+    
+
     return (
         <div className='te__single_product--card'>
             <div className="product__body">
@@ -13,7 +18,6 @@ const SingleProduct = () => {
                 </div>
 
                 <div className="product__content">
-
                     <div className="product__title">3PCS Set Fashion Mens Bracelet Necklace Watches Men Business Quartz Wrist Watch Classic Male Casual Leather Watch Reloj Hombre</div>
 
                     <div className="product__price-rating--group">

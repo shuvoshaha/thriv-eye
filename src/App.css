@@ -8,7 +8,11 @@
 }
 
 .te__container {
-  max-width: 90%;
+  max-width: 1168px;
   padding-inline: 1rem;
   margin: 0 auto;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }

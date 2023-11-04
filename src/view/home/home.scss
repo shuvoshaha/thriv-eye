@@ -1,0 +1,13 @@
+@import 'styles/style.scss';
+
+.te__home {
+   
+    
+    .te__category-product{
+       
+        .te__category-product--list {
+            @include flex;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import 'styles/style.scss';
+
+.te__card--header {
+    padding-bottom: 1rem;
+
+    .card__header--title {
+        @include text($xl, $sub-title-color, $xl-weight );
+    }
+}
