@@ -25,7 +25,7 @@
       "components": ["./components"],
       "store": ["./store"],
       "slice": ["./store/slicers"],
-      "images": ["assets"],
+      "images": ["./assets/images"],
       "config": ["./config"],
       "helpers": ["./helpers"],
       "types": ["./types"],

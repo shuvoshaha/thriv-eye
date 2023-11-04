@@ -7,6 +7,7 @@
 
     .thrid__eye-inner {
         @include flexo();
+        padding-block: 14px;
 
     .te__logo {
 
@@ -29,8 +30,12 @@
                     color: $primary-color;
                     box-shadow: $box-shadow;
                     font-size: $sm;
-                    font-weight: $x-weight;
-                    padding: 5px;
+                    font-weight: $lg-weight;
+                    padding: 4px;
+                    width: 15px;
+                    height: 15px;
+                    text-align: center;
+                    letter-spacing: 0.8px;
                 }
 
             }
@@ -46,7 +51,7 @@
 
                     .icons__thumb {
                         color: $primary-color;
-                        font-size: $md;
+                        font-size: $lg;
                     }
                 }
 

@@ -1,15 +1,22 @@
 $primary-color: red;
 $secondary-color: white;
-$title: #000;
+$title-color: #212121;
+$sub-title-color: #6a6a6a;
 
-
+$border: 1px solid #e7e7e7;
 $box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+$border-color: #e7e7e7;
+$letter-space: 0.6px;
+$trasition: all 0.3s ease-out;
 
-// font size
+// fonts
 $sm: 12px;
-$md: 16px;
-$lg: 18px;
-$xl: 24px;
+$md: 14px;
+$lg: 16px;
+$xl: 18px;
+$xxl: 24px;
 
 $md-weight: 500;
-$x-weight: bold;
+$lg-weight: 600;
+$xl-weight: 800;
+$xxl-weight: 900;

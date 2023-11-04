@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaPhone, FaHeart, FaShoppingCart, FaUserAlt } from 'react-icons/fa'
 import './header.scss'
+import SubHeader from 'components/sub-header/sub-header'
 
 const Header = () => {
     return (
@@ -22,9 +23,11 @@ const Header = () => {
                                 </a>
                             </li>
 
-                            <li className="social__icon">
+                            <li className="social__icon overlay--item">
                                 <a target='_blank' href='' className='icons__item'>
                                     <FaHeart className='icons__thumb' />
+                                    <span className='cart__quantity'>10</span>
+
                                 </a>
                             </li>
 
@@ -44,6 +47,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
+            <SubHeader />
         </div>
 
     )

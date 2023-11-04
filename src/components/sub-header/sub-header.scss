@@ -1,0 +1,74 @@
+@import 'styles/style.scss';
+
+
+.te__sub-header {
+
+    padding-block: 1rem;
+    border: $border;
+
+    .te__sub-header--inner {
+        @include flexo;
+
+        .te__category-menu {
+
+            .te__bar {
+                background: $secondary-color;
+                border: none;
+                padding-inline: 0;
+                @include flex;
+                cursor: pointer;
+                color: $sub-title-color;
+
+                &:focus {
+                    border: none;
+                }
+
+                font-weight: $lg-weight;
+
+
+                .te__bar_icon {
+                    font-size: $xl;
+                    margin-right: 5px;
+
+                }
+
+                .te__bar_title {
+                    text-transform: uppercase;
+                    font-size: $lg;
+                }
+            }
+
+
+        }
+
+        .te__search {
+            width: 50%;
+
+            @media screen and ( max-width: 1000px ) {
+                width: 70%;
+            }
+
+            .te__search_group {
+                border: 2px solid $border-color;
+                border-radius: 3px;
+                padding-inline: 5px;
+                @include flex;
+
+                .search__input {
+                    width: 95%;
+                    padding: 7px;
+                    border: none;
+                    outline: none;
+                    font-size: $md;
+                    font-weight: $md-weight;
+                    letter-spacing: $letter-space;
+
+                }
+
+                .search__icon {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

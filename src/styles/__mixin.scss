@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @mixin flexo($dir: flex, $align: center, $justify: space-between) {
     display: $dir;
     align-items: $align;
@@ -7,6 +9,12 @@
 @mixin flex( $align: center) {
     display: flex;
     align-items: $align;
+}
+
+@mixin text($size: $md, $color: $title-color, $weight: $md-weight){
+    font-size: $size;;
+    color: $color;
+    font-weight: $weight;
 }
 
 
