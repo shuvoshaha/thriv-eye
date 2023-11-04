@@ -10,7 +10,7 @@ export const Navigation: React.FC = () => {
 
         <>
             <Routes>
-                <PublicRoute
+                <Route
                     index
                     element={(
                         <Suspense fallback={<>...</>}>

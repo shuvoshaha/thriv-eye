@@ -1,16 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import { useAppSelector } from 'hooks';
 import { Navigation } from 'navigation';
+import { Footer, Header } from 'components';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
+
   const store = useAppSelector(state => state.product)
   console.log("store", store)
 
   return (
    <>
+    <Header />
     <Navigation />
+    <Footer />
    </>
   );
 }

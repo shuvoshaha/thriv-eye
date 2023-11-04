@@ -1,0 +1,59 @@
+@import 'styles/style.scss';
+
+.thrid__eye-header{
+  
+    background: #fff;
+    box-shadow: $box-shadow;
+
+    .thrid__eye-inner {
+        @include flexo();
+
+    .te__logo {
+
+    }
+
+    .te__social--icons {
+
+        .social__icons--group {
+            list-style: none;
+
+            .overlay--item {
+                position: relative;
+
+                .cart__quantity {
+                    position: absolute;
+                    top: -18px;
+                    right: -16px;
+                    background: $secondary-color;
+                    border-radius: 50%;
+                    color: $primary-color;
+                    box-shadow: $box-shadow;
+                    font-size: $sm;
+                    font-weight: $x-weight;
+                    padding: 5px;
+                }
+
+            }
+
+            .social__icon {
+
+                display: inline;
+                margin-left: 16px;
+
+                .icons__item {
+
+                    text-decoration: none;
+
+                    .icons__thumb {
+                        color: $primary-color;
+                        font-size: $md;
+                    }
+                }
+
+             
+            }
+        }
+    }
+}
+
+}

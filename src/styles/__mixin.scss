@@ -1,0 +1,13 @@
+@mixin flexo($dir: flex, $align: center, $justify: space-between) {
+    display: $dir;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin flex( $align: center) {
+    display: flex;
+    align-items: $align;
+}
+
+
+
