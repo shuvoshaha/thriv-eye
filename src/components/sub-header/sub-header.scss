@@ -5,9 +5,14 @@
 
     padding-block: 1rem;
     border: $border;
-
+    
     .te__sub-header--inner {
-        @include flexo;
+        position: relative;
+        
+        &-group {
+            
+            @include flexo;
+        }
 
         .te__category-menu {
 

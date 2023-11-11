@@ -1,0 +1,47 @@
+@import 'styles/style.scss';
+
+
+.te__mega_menu {
+    position: absolute;
+    top: 145%;
+    background: $secondary-color;
+    left: 0;
+    box-shadow: $box-shadow;
+    min-width: 550px;
+    padding: 1rem;
+    overflow-x: auto;
+    z-index: 1;
+
+    &__body {
+        @include flexo;
+
+    }
+    &__items {
+        list-style: none;
+    }
+
+    &__item {
+
+        &__title {
+            @include text($md, $sub-title-color, $md-weight);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            @include text($md, $sub-title-color, $md-weight);
+            text-decoration: none;
+            transition: $trasition;
+            padding-bottom: 5px;
+            display: block;
+
+            &:hover {
+                color: $primary-color;
+            }
+            
+
+        }
+    }
+
+
+}
