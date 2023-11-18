@@ -36,10 +36,12 @@ const SubHeader = () => {
 
                     {
                         isMegaMenuOpen &&
+                        <div ref={contentRef}>
+
                         <MegaMenu
-                            contentRef={contentRef}
                             stateDispatch={setIsMegaMenuOpen}
-                        />
+                            />
+                            </div>
                     }
 
 

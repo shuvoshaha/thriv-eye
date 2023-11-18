@@ -17,5 +17,17 @@
     font-weight: $weight;
 }
 
+@mixin common-btn {
+    outline: none;
+    border: none;
+    font-size: $md;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+
 
 

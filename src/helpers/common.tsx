@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect,  useState } from 'react'
 
 export const OutSideClicker = (
     contentRef: any
@@ -12,14 +12,14 @@ export const OutSideClicker = (
     const modalHandler = (e: any) => {
 
         if (contentRef.current && !contentRef.current.contains(e.target)) {
-           return setIsMegaMenuOpen(false)
+            setIsMegaMenuOpen(false)
         }
-        return
+        
     }
     useEffect(() => {
         document.addEventListener("click", modalHandler)
         return () => document.removeEventListener('click', modalHandler)
-    },[contentRef])
+    },[])
 
     return {  isMegaMenuOpen, setIsMegaMenuOpen }
 }

@@ -1,10 +1,10 @@
 import React, { lazy } from 'react';
 const Home = lazy(() => delayForDemo(import('./home/home')));
-const Product = lazy(() => delayForDemo(import('./product/product')));
+const SingleProduct = lazy(() => delayForDemo(import('./product/single-product/single-product')));
 
 export {
     Home,
-    Product
+    SingleProduct
 }
 
 

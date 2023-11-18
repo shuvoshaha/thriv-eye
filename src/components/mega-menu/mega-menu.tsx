@@ -5,10 +5,10 @@ import './mega-menu.scss'
 
 const MegaMenu: React.FC<outClickPropsTypes> = (props) => {
 
-    const { contentRef, stateDispatch } = props
+    const { stateDispatch } = props
 
     return (
-        <div className='te__mega_menu' ref={contentRef}>
+        <div className='te__mega_menu'>
             <div className="te__mega_menu__body">
                 {
                     [1, 2, 3, 4, 5].map((item: any, idx: number) => {
