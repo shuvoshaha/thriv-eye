@@ -13,5 +13,4 @@ export {
     Slider,
     CardHeader,
     MegaMenu
-    
  }

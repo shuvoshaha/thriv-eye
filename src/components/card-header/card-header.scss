@@ -4,6 +4,6 @@
     padding-bottom: 1rem;
 
     .card__header--title {
-        @include text($xl, $sub-title-color, $xl-weight );
+        @include text($xl, $primary-color, $xl-weight );
     }
 }

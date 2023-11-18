@@ -9,9 +9,19 @@
         @include flexo(flex, flex-start, space-between);
         flex-wrap: wrap;
 
+        @media screen and (max-width: 500px) {
+           flex-direction: column;
+        }
+
         .te__footer--main {
 
             width: 30%;
+            margin-bottom: 2rem;
+
+
+            @media screen and (max-width: 500px) {
+                width: 100%;
+            }
 
             .te__footer--logo {
                 margin-bottom: 10px
@@ -30,7 +40,14 @@
             flex-wrap: wrap;
             width: 70%;
 
+            @media screen and (max-width: 500px) {
+                width: 100%;
+                flex-direction: column;
+            }
+
             .te__footer--col {
+
+                margin-bottom: 2rem;
 
                 .te__footer-col--title {
                     margin-bottom: 10px;

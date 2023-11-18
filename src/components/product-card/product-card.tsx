@@ -4,13 +4,15 @@ import Image from '../../assets/images/product.webp'
 import { FaStar } from 'react-icons/fa'
 import './product-card.scss'
 
-const SingleProduct = () => {
+const ProductCard = () => {
     const navigate = useNavigate()
 
-    
+    const navigateHandler = () =>  {
+        navigate(`product/${1}`)
+    }
 
     return (
-        <div className='te__single_product--card'>
+        <div className='te__single_product--card' onClick={navigateHandler}>
             <div className="product__body">
 
                 <div className="product__thumb">
@@ -38,4 +40,4 @@ const SingleProduct = () => {
     )
 }
 
-export default SingleProduct
+export default ProductCard

@@ -24,7 +24,7 @@ const SingleProduct: React.FC = () => {
 
 
                                 <div className="te__single_product-head--info-sizes">
-                                    <h3 className="te__product--info-title size__title mb-05">Size</h3>
+                                    <h3 className="te__product--info-title size__title mb-8px">Size</h3>
 
                                     <div className="sizes mb-1">
 
@@ -39,7 +39,7 @@ const SingleProduct: React.FC = () => {
 
                                 <div className="te__single_product-head--info__colors_availability mb-1">
                                     <div className="te__p_colors">
-                                        <div className="te__product--info-title colors__title mb-05">Color</div>
+                                        <div className="te__product--info-title colors__title mb-8px">Color</div>
                                         <div className="colors">
                                             {["Red", "Blue", "Green"].map((item: any, idx: number) => {
                                                 return <button key={idx} className='product__btn single--size'>{item}</button>
@@ -49,7 +49,7 @@ const SingleProduct: React.FC = () => {
                                     </div>
 
                                     <div className="te__p_availability">
-                                        <div className="te__product--info-title colors__title mb-05 ">In Stock</div>
+                                        <div className="te__product--info-title colors__title mb-8px ">In Stock</div>
                                         <div className="availability">
                                             <button className='product__btn availability__btn'>50</button>
                                         </div>
