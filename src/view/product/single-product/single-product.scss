@@ -17,6 +17,9 @@
             @include common-btn;
             @include text($md, $title-color, $lg-weight);
 
+            @media screen and (max-width: 600px) {
+                margin-bottom: 10px;
+            }
 
             &:not(:last-child) {
                 margin-right: 10px;
@@ -88,7 +91,7 @@
             }
             
             &__colors_availability {
-                @include flexo;
+                @include flexo(flex, flex-start, space-between);
             }
         }
     }
@@ -167,6 +170,8 @@
         transition: $trasition;
         user-select: none;
         border: 1px solid $primary-color;
+        height: 30px;
+        @include flexo(flex, center, center);
 
 
         &:hover {
